@@ -31,7 +31,7 @@ namespace Promociones.Test
             var icfg = new Mock<IConfiguration>();
             PromocionBl promocionBl = new PromocionBl(repositorio.Object, icfg.Object);
             var controller = new PromocionesController(promocionBl);
-            var resp = controller.Vigente(new Guid("9083-9847-9083-9023")) ;
+            var resp = controller.Vigente(new Guid("08d5d180-aed9-6df7-6f96-b0384c000001")) ;
             Assert.True(resp.StatusCode == HttpStatusCode.OK);
         }
     }
